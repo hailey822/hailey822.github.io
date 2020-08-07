@@ -1,0 +1,441 @@
+data-offset-top="650"<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> HYELEE KIM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HyeLee Kim's Porfolio">
+  <meta name="author" content="HyeLee Kim">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap and Font Awesome css-->
+  <!-- we use cdn but you can also include local files located in css directory-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Google fonts - Open Sans-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="icon" type="image/png" href="icon.png">
+<!--   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110143124-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110143124-1');
+  </script> -->
+
+</head>
+
+<body data-spy="scroll" data-target="#navigation" data-offset="120">
+
+  <a class="scrollTo">  <button type="button" id= "fixedScroll" class="btn-circle">&#8963;</button> </a>
+
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">HYELEEKIM</a>
+        <button type="button" id="nav-main" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="navbar-collapse collapse" id="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="navbar-item "> <a class="navbar-link" href="index.html#intro">INTRO</a> </li>
+          <li class="navbar-item "> <a class="navbar-link" href="index.html#about">ABOUT</a> </li>
+          <li class="navbar-item active"> <a class="navbar-link" href="index.html#project">WORK</a> </li>
+          <li class="navbar-item"> <a class="navbar-link" href="index.html#contact">CONTACT</a> </li>
+          <li class="navbar-item"><a href="documents/HyeLee_resume_general.pdf"> RESUME</a> </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+  <div id="all">
+
+    <section class="project-header">
+
+      <div class="row" >
+        <div class="col" id="project-title">
+          <p> Programmer </p>
+          <h3 class="row">
+            <div class="col-sm-1" id="switcher-sm">
+              <a href="post_12.html"> <span class="glyphicon glyphicon-menu-left" ></span> </a>
+            </div>
+            <div class="col-sm-10"> Flocks - Code Art </div>
+            <div class="col-sm-1" id="switcher-sm">
+              <a href="post_02.html"> <span class="glyphicon glyphicon-menu-right"></span> </a>
+            </div>
+          </h3>
+          <p id="meta"> Academic Project - "Computer Graphics" </p>
+          <p id="meta"> 4 weeks : 2015/11 - 2015/12 </p>
+          <p id="meta"> Processing </p>
+          <p id="overview"> “Flocks” is an interactive 3D graphics code art to simulate the natural flocking behaviors of the birds. Through project, 3D version of the autonomous agents was implemented referencing “The Nature of Code” by Daniel Shiffman. </p>
+          <p id="hashtag">  #proecesing #interactive #3D_graphics </br> #autunomous_agents #nature_of_code </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="project-content ">
+
+      <div class="row" >
+        <div class="col-md-4" id="project-meta">
+          <div id="box-info" class = "wrap" data-spy="affix" data-offset-top="650">
+            <div class="title"> category</div>
+            <div class="definition"> academic project </div>
+            <div class="title"> duration </div>
+            <div class="definition"> 4 weeks : 2015/11 - 2015/12 </div>
+            <div class="title"> platform </div>
+            <div class="definition"> Processing </div>
+            <div class="title"> #proecesing #3D_graphics </br> #interactive </br>#autunomous_agents </br> #nature_of_code</div>
+            <div class="definition"> </div>
+          </div>
+        </div>
+
+        <div class="col-md-8" id="project-overview">
+          <div class="content">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe src="https://player.vimeo.com/video/244533839"></iframe>
+            </div>
+          </div>
+
+          <div class="header"> TASK </div>
+          <div class="content"> Creatively build interactive 3D graphics project </div>
+
+          <div class="header"> TOOL </div>
+          <div class="content"> Processing, GLSL  </div>
+
+          <div class="header"> WORKFLOW </div>
+          <div class="content" style="text-align: left">
+            "Flocks" is an interactive 3d graphics code art.  Viewers can design their own paper plane with the drawing palette and apply the design. Viewers can explore the 3D space in two ways. (1) Viewers can either see the paper plane flocks flying autonomously in 3rd person perspective, (2) or navigate through the virtual landscape with keyboard control in immersive 1st person perspective of the designed paper plane.
+            <img src="img/portfolio/flock_workflow.png" id="pt1">
+          </div>
+
+          <div class="header"> INTERNAL MECHANISM </div>
+          <div class="content" style="text-align: left">
+            "Flocks" was a project to simulate the natural flocking behaviors of the birds. Through project, 3D version implementation of autonomous agents in "<a href= "http://natureofcode.com/book/chapter-6-autonomous-agents/">The Nature of Code</a>" by Daniel Shiffman. The flocks of paper planes fly in a herd yet avoiding the collision through three steering forces :   </br> </br>
+            <strong>1. Avoidance </strong>: check the nearby neighborhood and steer away to avoid collision   </br>
+            <strong>2. Alignment </strong>: calculate the average velocity of the neighborhood to make them head the same direction  </br>
+            <strong>3. Cohesion </strong>: steer towards to the center of the neighborhood to say within the group  </br>  </br> </br>
+            <div class="container-fluid ">
+              <img src="img/portfolio/flock_steer1.png" id="pt2">
+              <img src="img/portfolio/flock_steer2.png" id="pt2">
+            </div>
+          </br>  </br>
+          Three forces are applied to the flocks and control the autonomous flight of the paper planes.
+          </div>
+
+          <div class="header"> PROCESS </div>
+          <div class="content">
+            <img src="img/portfolio/flock_timeline.png" id="pt1">
+          </div>
+
+          <div class="content">
+            <p> World Making </p>
+            <div class="container-fluid ">
+              <img src="img/portfolio/flock_worldmaking1.png" id="pt2">
+              <img src="img/portfolio/flock_worldmaking2.png" id="pt2">
+              <img src="img/portfolio/flock_worldmaking3.png" id="pt1">
+            </div>
+          </div>
+          <div class="content">
+            <p> Object Design </p>
+            <div class="container-fluid ">
+              <img src="img/portfolio/flock_worldmaking4.png" id="pt2">
+              <img src="img/portfolio/flock_worldmaking5.png" id="pt2">
+            </div>
+          </div>
+
+          <div class="header"> RESULT </div>
+          <div class="content">
+            <img src="img/portfolio/flock_final0.png" id="pt3" onclick="openLightbox();currentSlide(1)" class="hover-shadow cursor">
+            <img src="img/portfolio/flock_final1.png" id="pt3" onclick="openLightbox();currentSlide(2)" class="hover-shadow cursor">
+            <img src="img/portfolio/flock_final2.png" id="pt3" onclick="openLightbox();currentSlide(3)" class="hover-shadow cursor">
+            <img src="img/portfolio/flock_final3.png" id="pt3" onclick="openLightbox();currentSlide(4)" class="hover-shadow cursor">
+            <img src="img/portfolio/flock_final5.png" id="pt3" onclick="openLightbox();currentSlide(5)" class="hover-shadow cursor">
+            <img src="img/portfolio/flock_final6.png" id="pt3" onclick="openLightbox();currentSlide(6)" class="hover-shadow cursor">
+            <img src="img/portfolio/flock_final7.png" id="pt3" onclick="openLightbox();currentSlide(7)" class="hover-shadow cursor">
+            <img src="img/portfolio/flock_final9.png" id="pt3" onclick="openLightbox();currentSlide(8)" class="hover-shadow cursor">
+            <img src="img/portfolio/flock_final10.png" id="pt3"onclick="openLightbox();currentSlide(9)" class="hover-shadow cursor">
+          </div>
+
+          <div id="myLightbox" class="lightbox">
+
+            <span class="close cursor" onclick="closeLightbox()">&times;</span>
+
+            <div class="lightbox-content">
+              <div class="mySlides">
+                <div class="numbertext">1 / 9</div>
+                <img src="img/portfolio/flock_final0.png" style="width:100%" >
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">2 / 9</div>
+                <img src="img/portfolio/flock_final1.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">3 / 9</div>
+                <img src="img/portfolio/flock_final2.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">4 / 9</div>
+                <img src="img/portfolio/flock_final3.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">5 / 9</div>
+                <img src="img/portfolio/flock_final5.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">6 / 9</div>
+                <img src="img/portfolio/flock_final6.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">7 / 9</div>
+                <img src="img/portfolio/flock_final7.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">8 / 9</div>
+                <img src="img/portfolio/flock_final9.png" style="width:100%">
+              </div>
+              <div class="mySlides">
+                <div class="numbertext">9 / 9</div>
+                <img src="img/portfolio/flock_final10.png" style="width:100%">
+              </div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              <div class="caption-container">
+                <p id="lightbox-caption"></p>
+              </div>
+
+              <div class="preview">
+                <img class="demo cursor" src="img/portfolio/flock_final0.png" style="width:100%" onclick="currentSlide(1)" alt="1st person object flying">
+              </div>
+
+              <div class="preview">
+                <img class="demo cursor" src="img/portfolio/flock_final1.png" style="width:100%" onclick="currentSlide(2)" alt="1st person object flying">
+              </div>
+
+              <div class="preview">
+                <img class="demo cursor" src="img/portfolio/flock_final2.png" style="width:100%" onclick="currentSlide(3)" alt="1st person object flying">
+              </div>
+
+              <div class="preview">
+                <img class="demo cursor" src="img/portfolio/flock_final3.png" style="width:100%" onclick="currentSlide(4)" alt="1st person object flying">
+              </div>
+
+              <div class="preview">
+                <img class="demo cursor" src="img/portfolio/flock_final5.png" style="width:100%" onclick="currentSlide(5)" alt="1st person object flying">
+              </div>
+              <div class="preview">
+                <img class="demo cursor" src="img/portfolio/flock_final6.png" style="width:100%" onclick="currentSlide(6)" alt="1st person object flying">
+              </div>
+              <div class="preview">
+                <img class="demo cursor" src="img/portfolio/flock_final7.png" style="width:100%" onclick="currentSlide(7)" alt="1st person object flying">
+              </div>
+              <div class="preview">
+                <img class="demo cursor" src="img/portfolio/flock_final9.png" style="width:100%" onclick="currentSlide(8)" alt="1st person object flying">
+              </div>
+              <div class="preview">
+                <img class="demo cursor" src="img/portfolio/flock_final10.png" style="width:100%"onclick="currentSlide(9)" alt="object design applied">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="header"> SOURCE CODE </div>
+          <div class="content">
+            Find the source code on <a href= "https://github.com/hailey822/Intelligence-and-Learning/tree/master/flock">my github</a>.
+          </div>
+      </div>
+
+      <div class="col-md-12" id="switcher-md">
+        <a href="post_12.html"> <span class="glyphicon glyphicon-menu-left" ></span> </a>
+        <a href="index.html#project"> <span class="glyphicon glyphicon-th" ></span> </a>
+        <a href="post_02.html"> <span class="glyphicon glyphicon-menu-right" ></span> </a>
+      </div>
+    </section>
+
+  </div>
+
+</div>
+
+<!-- Javascript files-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"></script>
+<script src="js/jquery.cookie.js"> </script>
+<script src="js/ekko-lightbox.js"></script>
+<!--     font and icons -->
+<script src="https://use.fontawesome.com/98b61309a7.js"></script>
+<script src="js/front.js"></script>
+<!--     isotope -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+
+<script>
+  $( document ).ready(function() {
+    /* activate jquery isotope */
+    var $container = $('#posts').isotope({
+      itemSelector : '.item',
+      isFitWidth: true
+    });
+
+    $container.isotope({ filter: '*' });
+
+                // filter items on button click
+                $('#filters').on( 'click', 'button', function() {
+                  var filterValue = $(this).attr('data-filter');
+                  $container.isotope({ filter: filterValue });
+                });
+              });
+
+  $(function(){
+    var navMain = $("#nav-main");
+    navMain.on("click", "a", null, function () {
+      navMain.collapse('hide');
+    });
+  });
+
+  $('.scrollTo').click(function () {
+    $("html, body").animate({
+      scrollTop: 0
+    }, 600);
+    return false;
+  });
+</script>
+
+<script>
+  $(window).scroll(function(){
+    $("#theFixed").css("top",Math.max(0,150-$(this).scrollTop()));
+  });
+
+  var fixAffixWidth = function() {
+    $('[data-spy="affix"]').each(function() {
+      $(this).width( $(this).parent().width() *0.9 );
+    });
+  }
+  fixAffixWidth();
+  $(window).resize(fixAffixWidth);
+
+</script>
+
+<script>
+            // Stop carousel
+            $('.carousel').carousel({
+              interval: false
+            });
+          </script>
+
+          <script>
+            var TxtRotate = function(el, toRotate, period) {
+              this.toRotate = toRotate;
+              this.el = el;
+              this.loopNum = 0;
+              this.period = parseInt(period, 10) || 2000;
+              this.txt = '';
+              this.tick();
+              this.isDeleting = false;
+            };
+
+            TxtRotate.prototype.tick = function() {
+              var i = this.loopNum % this.toRotate.length;
+              var fullTxt = this.toRotate[i];
+
+              if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+              } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+              }
+
+              this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+              var that = this;
+              var delta = 150 - Math.random() * 100;
+
+              if (this.isDeleting) { delta /= 2; }
+
+              if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+              } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+              }
+
+              setTimeout(function() {
+                that.tick();
+              }, delta);
+            };
+
+            window.onload = function() {
+              var elements = document.getElementsByClassName('txt-rotate');
+              for (var i=0; i<elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                  new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+              }
+                // INJECT CSS
+                var css = document.createElement("style");
+                css.type = "text/css";
+                css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+                document.body.appendChild(css);
+              };
+            </script>
+
+            <script>
+              function openLightbox() {
+                document.getElementById('myLightbox').style.display = "block";
+              }
+
+              function closeLightbox() {
+                document.getElementById('myLightbox').style.display = "none";
+              }
+
+              var slideIndex = 1;
+              showSlides(slideIndex);
+
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("lightbox-caption");
+                if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                      slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                      dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    captionText.innerHTML = dots[slideIndex-1].alt;
+                  }
+                </script>
+
+              </body>
+              </html>

@@ -1,0 +1,264 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* basic */
+* { margin: 0; padding: 0; }
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.875em;
+  line-height: 1.3;
+  color: #252525;
+  -webkit-text-size-adjust: none; }
+
+ol, ul { list-style: none; }
+
+blockquote, q {quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+a { text-decoration: none; color: #252525; }
+
+em { font-style: italic; }
+
+strong { font-weight: bold; }
+
+hr{
+  width: 90%;
+  border-top: 1px solid #6016f3;
+  margin:0 auto;
+}
+
+/* Normal Size */
+#container{
+  display: flex;
+  flex-flow: row wrap;
+  width:98%;
+  margin:20px;
+}
+
+#left_container{
+  display: none;
+  order:3;
+  position: relative;
+  width:0%;
+  flex-flow: column nowrap;
+}
+#left_column{ position: fixed;}
+#left_column div{flex:1 1 1 1; }
+
+
+#content {
+  order: 2;
+  width:85%;
+  margin: 0;
+  display:flex;  
+  flex-flow: column nowrap; 
+}
+#content div{flex:1 1 1; padding: 0px;}
+#content div#intro{ }
+#content div#intro #header {
+  font-family:Gill sans; font-size: 25px;  text-align: center; 
+  margin: 0 auto; height: 50px;
+  padding: 0 50px 0 50px;}
+#content div#intro #header a{color:#6016f3;}
+#content div#intro #header a:active{color: #ed2e0c ;}
+#content div#intro #intro_photo{ margin: 0 auto; position:relative; width:90%; height:0; padding-top:50%;}
+#content div#intro #intro_photo img{ position:absolute; top:0; left:0; width:100%;}
+#content div#intro #intro_words{text-align:justify;font-size: 16px;   margin: 20px 0 0; padding: 0 50px 0 50px; }
+#content div#intro #intro_words a{ color:#6016f3; font-weight: bold;}
+#content div#intro #intro_words a:hover {background-color:#eef769;}
+
+#content div#portfolio{ margin: 50px 5px 50px 5px; padding:20px 0 20px 0;}
+#content div#portfolio ol{ margin: 0 auto; position:relative; }
+#content div#portfolio ol li{ margin: 0 auto; margin-bottom: 40px;}
+
+#content div#specific {
+  width: 70%; margin: 20px auto;
+  display:flex;  
+  flex-flow: column nowrap; 
+}
+#content div#specific div{flex:1 1 1;}
+#content div#specific div#title{ font-size: 15px; font-weight: bold; margin-top: 10px;}
+#content div#specific div#genre{ font-size: 15px; margin-bottom: 20px; margin-top: 10px; font-weight: bold;}
+#content div#specific div#explanation { font-size: 15px;}
+#content div#specific div#explanation a{ color:#6016f3; font-weight: bold;}
+#content div#specific div#media{ 
+  position:relative; 
+  width:90%;  
+  height: 90%;
+}
+#content div#specific div#media img{ 
+  width:100%;
+  margin: 20px;
+}
+
+#content div#resume {margin: 0 auto; padding: 0 50px 0 50px; }
+#content div#resume .resume_block{ border-bottom:0.5px solid #acacac; margin:1em 0; padding:1em;}
+#content div#resume .resume_content{ margin:0 0 0 12em;}
+#content div#resume .date{ margin-top:20px; float: right; text-align: right; font-size: .8em; }
+#content div#resume ul{ list-style: circle;}
+#content div#resume h2 { float:left; font-size:1.1em;font-weight: bold;}
+#content div#resume h3 { font-weight: bold; font-size:1.0em}
+#content div#resume h3.Job { margin-top:20px;font-weight: bold;}
+
+#content div#footer2{display: none;}
+
+#circle {
+    width: 20px;
+    height: 20px;
+    background: #7fee1d;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+}
+#nav_container { 
+  order:1;
+  background:#eef769 ;
+  display:flex;
+  display:block;
+  width:15%;
+  font-weight: bold;
+}
+#nav {position: fixed;}
+#nav ul { padding-left: 10px; margin: 10px auto;}
+#nav li { margin: 8px 0px; }
+#nav li .current { color: #6016f3;font:bold;}
+#nav a:hover { color:#6016f3; font:bold; transition: 1s color;}
+#nav a:active{ color:#ed2e0c; font:bold;}
+
+#nav li #works { font-size: 12px; color: black; font-weight:normal;}
+#nav li #works ul{ margin: 20px 0px 20px 0px;}
+#nav li #works ul li:hover{
+  color: #6016f3;
+  background-color: white;
+}
+
+#nav #contact { align-content: center; margin-top:50px; font-size: 0.9em; color: #acacac;font-weight: normal;}
+#nav #contact a:hover{color:#ed2e0c;}
+a.opacity:hover { opacity: 1.0; }
+a.portfolio {font:normal;}
+
+
+@media all and (max-width:1196px){
+
+  #container{
+    display: flex;
+    flex-flow: column wrap;
+    width:98%;
+    margin:10px auto;
+  }
+
+  #nav_container { 
+  order:1;
+  display: none;
+  }
+  #content {
+    order: 2;width:100%; margin: 0 auto; display:flex; flex-flow: column nowrap; 
+  }
+
+  #content div{flex:1 1 1 1;}
+  #content div#intro{ font-size: 40px; }
+  #content div#intro #intro_photo{ margin: 0 auto; position:relative; width:100%; height:0; padding-top:60%;}
+  #content div#intro #intro_photo img{ position:absolute; top:0; left:0; width:100%;}
+  #content div#intro #intro_words{padding: 0 20px 0 20px; }
+
+  #content div#portfolio{ padding: 0 20px 0 20px;  margin:50 10 0 10; padding: 0;}
+  #content div#portfolio ol{ margin: 0 auto; position:relative; }
+  #content div#portfolio ol li{ margin: 0 auto; margin-bottom:50px;}
+  #content div#portfolio ol li img #big{width:470px;}
+  #content div#portfolio ol li img #small{width:200px;}
+
+  #content div#resume {margin: 50px 0 50px 0; padding: 0; }
+  #content div#resume .resume_block{ border-bottom:0.5px solid #acacac; margin:0; padding:0.8em;}
+  #content div#resume .resume_content{ margin:0 0 0 9em;}
+  #content div#resume .date{ font-size:0.8em;margin-top:20px; float: right; text-align: right; font-size: .8em; }
+  #content div#resume ul{ list-style: circle;}
+  #content div#resume li{font-size:0.8em}
+  #content div#resume h2 { float:left; font-size:0.9em;font-weight: bold;}
+  #content div#resume h3 { font-weight: bold; font-size:0.9em}
+  #content div#resume h3.Job { margin-top:15px;font-weight:bold;}
+
+}
+
+
+h1:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+
+#project-thumbs { font-size: 0.9em; margin: 10px;}
+#project-thumbs li {}
+#project-thumbs li a img {
+  vertical-align: bottom; }
+
+#project-thumbs li a img:hover{
+  vertical-align: bottom;
+  opacity: 0.2;
+  filter: alpha(opacity=20); /* For IE8 and earlier */
+  -webkit-filter: grayscale(80%); /* Chrome, Safari, Opera */
+  filter: grayscale(80%);
+}
+#project-thumbs .thumb-meta {
+  position:absolute;
+  text-align: center;
+  width: 200px;
+  height: 70px;
+  vertical-align: 
+  overflow:hidden; 
+}
+
+#project-thumbs .thumb-meta h2 {
+  display: none;
+}
+
+#project-thumbs .category {
+  position:absolute;
+  text-align: center;
+  width: 1000px;
+  height: 70px;
+  vertical-align: 
+  overflow:hidden; 
+}
+
+
+#project-thumbs .category h2 {
+  font-size: 15px;
+  border-bottom: 2px solid #6016f3;
+  font-style: bold;
+  padding-bottom: 10px;
+  margin-bottom: 100px;
+}
+
+#project-thumbs .thumb-caption {
+  color: #6016f3;
+}
+#project-thumbs .thumb-caption:active{
+  color: #ed2e0c ;
+}

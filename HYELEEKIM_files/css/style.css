@@ -1,0 +1,55 @@
+
+
+.icons {
+	margin: 30px auto 30px auto;
+}
+
+.icons a {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 10px;
+	vertical-align: middle;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-ms-transition: all .3s;
+}
+
+.icons a.twitter { background: url(../img/twitter.png) left top no-repeat; }
+.icons a.dribbble { background: url(../img/dribbble.png) left top no-repeat; }
+.icons a.rss { background: url(../img/rss.png) left top no-repeat; }
+.icons a.pinterest { background: url(../img/pinterest.png) left top no-repeat; }
+.icons a.digg { background: url(../img/digg.png) left top no-repeat; }
+.icons a.flickr { background: url(../img/flickr.png) left top no-repeat; }
+.icons a.forrst { background: url(../img/forrst.png) left top no-repeat; }
+.icons a.vimeo { background: url(../img/vimeo.png) left top no-repeat; }
+.icons a.reddit { background: url(../img/reddit.png) left top no-repeat; }
+.icons a.linkedin { background: url(../img/linkedin.png) left top no-repeat; }
+.icons a.facebook { background: url(../img/facebook.png) left top no-repeat; }
+.icons a.paypal { background: url(../img/paypal.png) left top no-repeat; }
+.icons a.stumbleupon { background: url(../img/stumbleupon.png) left top no-repeat; }
+.icons a.email { background: url(../img/email.png) left top no-repeat; }
+.icons a.deviantart { background: url(../img/deviantart.png) left top no-repeat; }
+.icons a.netvibes { background: url(../img/netvibes.png) left top no-repeat; }
+.icons a.yahoo { background: url(../img/yahoo.png) left top no-repeat; }
+.icons a.github { background: url(../img/github.png) left top no-repeat; }
+.icons a.addthis { background: url(../img/addthis.png) left top no-repeat; }
+.icons a.behance { background: url(../img/behance.png) left top no-repeat; }
+.icons a.blogger { background: url(../img/blogger.png) left top no-repeat; }
+.icons a.slashdot { background: url(../img/slashdot.png) left top no-repeat; }
+.icons a.technorati { background: url(../img/technorati.png) left top no-repeat; }
+.icons a.googleplus { background: url(../img/googleplus.png) left top no-repeat; }
+.icons a.apple { background: url(../img/apple.png) left top no-repeat; }
+.icons a.myspace { background: url(../img/myspace.png) left top no-repeat; }
+.icons a.sharethis { background: url(../img/sharethis.png) left top no-repeat; }
+.icons a.yelp { background: url(../img/yelp.png) left top no-repeat; }
+.icons a.delicious { background: url(../img/delicious.png) left top no-repeat; }
+.icons a.lastfm { background: url(../img/lastfm.png) left top no-repeat; }
+.icons a.youtube { background: url(../img/youtube.png) left top no-repeat; }
+.icons a.skype { background: url(../img/skype.png) left top no-repeat; }
+.icons a.tumblr { background: url(../img/tumblr.png) left top no-repeat; }
+.icons a.aim { background: url(../img/aim.png) left top no-repeat; }
+.icons a.google { background: url(../img/google.png) left top no-repeat; }
+
+.icons a:hover { background-position: left -34px; }

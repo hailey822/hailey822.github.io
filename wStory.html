@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=1, user-scalable=no">
+	<title> HYE LEE KIM </title>
+	<link rel="stylesheet" href="./HYELEEKIM_files/css/screen.css" type="text/css" media="screen">
+	<link rel="icon"  type="image/png" href="./HYELEEKIM_files/icon.png">
+	<link rel="stylesheet" href="./HYELEEKIM_files/css/style.css" type="text/css" ">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Corben:400,700" type="text/css">
+	<script src="./HYELEEKIM_files/js/jquery-1.11.0.min.js"></script>
+	<script src="./HYELEEKIM_files/js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="./HYELEEKIM_files/js/masonry.pkgd.min.js"></script>
+	<script type="text/javascript" src="./HYELEEKIM_files/js/init.js"></script>
+
+	<script>
+		is_loading = false;
+		function scrollTo(element, to, duration) {
+			if (document.body.scrollTop == to) return;
+			is_loading = true;
+			var diff = to - document.body.scrollTop;
+			var scrollStep = Math.PI / (duration / 10);
+			var count = 0, currPos;
+			start = document.body.scrollTop;	    
+			var body = document.body,
+			html = document.documentElement;
+			var maxcss_height = Math.max( body.scrollHeight, body.offsetHeight, 
+				html.clientHeight, html.scrollHeight, html.offsetHeight );
+			screen_height = $(window).height(); 
+			scrollInterval = setInterval(function(){
+				if (Math.abs(document.body.scrollTop - to) >= 10
+					|| Math.abs(document.body.scrollTop - to) <= -10) {
+					count = count + 1;
+				currPos = start + diff * (0.5 - 0.5 * Math.cos(count * scrollStep));
+
+				document.body.scrollTop = currPos;
+
+				if(document.body.scrollTop == max_height-screen_height) {
+					clearInterval(scrollInterval); 
+					is_loading=false ;
+					return;
+				}	        	
+			}
+			else { clearInterval(scrollInterval); is_loading=false; }
+		},10);
+		}
+
+		function transitionAnimation(elID){
+			if (is_loading) return;			
+			var dest = document.getElementById(elID);
+			scrollTo(dest,dest.offsetTop, 500);
+			$('a').removeClass('current');
+			$("[href=#"+elID+"]").addClass('current');
+		}
+
+		$(document).ready(function() {
+			$('.mainGDC').hover(function(){
+			    $('.navGDC').css({
+			    	'color': '#6016f3',
+			        'background-color': 'white',
+			    });
+			},function(){
+			    $('.navGDC').css({
+			        'color': 'auto',
+			        'background-color': 'auto',
+			    });
+			});	
+         });
+
+		$(window).scroll(function (event) {
+			var scroll = $(window).scrollTop();
+			var scrollBottom =  $(window).scrollTop() + $(window).height();
+
+			var introHeight = document.getElementById("intro");
+			var portfolioHeight = document.getElementById("portfolio");
+			var resumeHeight = document.getElementById("resume");
+
+			if (introHeight.offsetTop<=scroll && scroll<= introHeight.offsetTop + introHeight.offsetHeight) {
+				$('a').removeClass('current');
+				$("[href=#intro]").addClass('current');
+			}
+			if (portfolioHeight.offsetTop<=scroll && scroll<=portfolioHeight.offsetTop+portfolioHeight.offsetHeight) {
+				$('a').removeClass('current');
+				$("[href=#portfolio]").addClass('current');
+			}
+		});
+
+		$(document).ready(function(){
+			$("dif").mouseenter(function(){
+				var id = $(this).attr('id');
+				$('a').removeClass('active');
+				$("[href=#"+id+"]").addClass('active');
+			});
+		});	
+	</script>
+</head>
+
+<body>
+	<div id="container">
+
+		<div id="content" class="box">
+		
+			<div id="specific" class="box">
+				
+				<!--arrow -->
+				<div id="media" id= "arrow">
+				<a href="http://139.59.249.130/HYELEEKIM.html">
+					<img src="./HYELEEKIM_files/portfolio/arrow.png" style="width:30px;height:30px;" align="right">
+				</a>
+				</div> 
+
+				<div id="title">
+					<h1> wStory: Mobile App UIUX Design (2015) </h1>
+				</div>
+				<div id="genre">
+					<h2> UIUX Designer </h2>
+				</div>
+				<div id="explanation">
+				<p> "wStory" is an Android mobile application which provides illustration subscription for the background screen and periodically updates the users with new illustrations. </p> <br><br><br><br><br>
+				</div>
+
+				<div id="media">
+					<img src="./HYELEEKIM_files/portfolio/mobile1.png" style="width:300px;">
+				</div> 
+				<div id="media">
+					<img src="./HYELEEKIM_files/portfolio/mobile2.png" style="width:300px;">
+				</div> 
+				<div id="media">
+					<img src="./HYELEEKIM_files/portfolio/mobile3.png" style="width:300px;">
+				</div> 
+				<div id="media">
+					<img src="./HYELEEKIM_files/portfolio/mobile4.png" style="width:300px;">
+				</div> 
+				<div id="media">
+					<img src="./HYELEEKIM_files/portfolio/mobile5.png" style="width:300px;">
+				</div> 
+
+			</div>
+		</div>
+
+
+		<div id="nav_container" class="box">
+			<div id="nav">
+				<ul id="nav">
+
+					<li class="nav-item"> <a href="http://139.59.249.130/HYELEEKIM.html" id="nav-intro" class="opacity" > Intro & Bio </a></li>
+
+					<li class="nav-item"> <a href="http://139.59.249.130/HYELEEKIM.html" id="nav-intro" class="opacity" > Projects</a> 
+
+					<div id="works">
+					<ul>			
+						<li>  <a href="http://139.59.249.130/gdc.html" >Global Digital City </a> </li>
+						<li> <a href="http://139.59.249.130/breath.html" > Breathe </a> </li>
+						<li> <a href="http://139.59.249.130/flock.html" > Flocks </a> </li>
+						<li> <a href="http://139.59.249.130/3d-modeling-maya(1).html" > Hell is others </a> </li>
+						<li> <a href="http://139.59.249.130/spatial.html" > Breathe </a> </li>
+						<li> <a href="http://139.59.249.130/media-performance.html">Flamboyant </a> </li>
+						<li>  <a href="http://139.59.249.130/beyond-memory.html"> Beyond Memory </a> </li>
+					</ul>
+					<ul>			
+						<li> <a href="http://139.59.249.130/atc2015.html"> ATC 2015 </a> </li>
+						<li> <a href="http://139.59.249.130/creative-performance.html" >Space of living memories</a> </li>
+						<li> <a href="http://139.59.249.130/atc2013.html" > ATC 2013 </a> </li>
+						<li> <a href="http://139.59.249.130/freud.html"> Freud-Trauma </a> </li> 
+					</ul>
+					<ul>			
+						<li> <a href="http://139.59.249.130/lg-hmd-device.html" > LG HMD </a> </li>
+						<li> <a href="http://139.59.249.130/lg-wrist-device.html"> LG Wrist  </a> </li>
+						<li> <a href="http://139.59.249.130/wStory.html" class="current opacity"> wStory </a> </li>
+						<li> <a href="http://139.59.249.130/iot-product-petplant.html"> PetPlant </a> </li> 
+					</ul>
+
+
+					</li>
+
+					<li class="nav-item"> <a href="http://139.59.249.130/cv.html" id="nav-resume" class="opacity"> CV </a> </li>
+
+					<div id="contact">
+					<ul>			
+						<li> contact </li>
+						<li> <a href="mailto:hailey822@naver.com">hailey822@naver.com</a></li>
+						<li> mobile 82-10-4373-031</li>
+						<li> blog <a href="http://hailey822.blog.me">hailey822.blog.me </a></li>
+						<li> © Copyright 2016&nbsp;&nbsp;</li>
+					</ul>
+					<div class="icons">
+						<a class="facebook" href="https://www.facebook.com/hailey.h.kim.52"></a>
+						<a class="googleplus" href="https://plus.google.com/106452882531010440861"></a>
+						<a class="pinterest" href="https://kr.pinterest.com/haileystitch/"></a>
+					</div>
+				</div>
+				</ul>
+			</div>
+		</div>
+
+	</div>  
+</body>
+
+</html>
